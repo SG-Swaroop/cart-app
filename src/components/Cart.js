@@ -100,7 +100,7 @@ function Cart() {
   };
     
   return (
-    <div className='flex flex-col container bg-red-300 rounded-md p-3 ml-4 md:w-full'>
+    <div className='flex flex-col container bg-blue-200 rounded-md p-3 ml-4 md:w-full'>
     <h1 className='font-bold text-center mb-3'>Your Cart</h1>
     <hr className='border-1 w-full'/>
     {productDetails.map((product)=>(
@@ -112,7 +112,7 @@ function Cart() {
             <button
             onClick={() => decrementCount(product.id)}
             disabled={product.product_count === 1}
-            className='bg-gradient-to-r from-red-900 to-red-400 rounded-full py-1 px-1 my-1 text-lg text-black hover:bg-red-400 hover:from-red-500 hover:to-red-600 flex flex-row justify-center w-12 outline-none'
+            className='bg-gradient-to-r from-blue-900 to-blue-400 rounded-full py-1 px-1 my-1 text-lg text-black hover:bg-blue-400 hover:from-blue-500 hover:to-blue-600 flex flex-row justify-center w-12 outline-none'
             style={
               product.product_count === 1
                 ? { background: '#8080809e', cursor: 'not-allowed' }
@@ -123,7 +123,7 @@ function Cart() {
             </button>
             <p className='mr-4 ml-4'>{product.product_count}</p>
             <button onClick={() => incrementCount(product.id)}
-                className='bg-gradient-to-r from-red-900 to-red-400 rounded-full py-2 px-2 my-2 text-sm text-black hover:bg-red-400 hover:from-red-500 hover:to-red-600 flex flex-row justify-center w-12 outline-none'
+                className='bg-gradient-to-r from-blue-900 to-blue-400 rounded-full py-2 px-2 my-2 text-sm text-black hover:bg-blue-400 hover:from-blue-500 hover:to-blue-600 flex flex-row justify-center w-12 outline-none'
             >
                 +
             </button>
@@ -171,7 +171,7 @@ function Cart() {
       </div>
       <hr className='border-1 w-full'/>
       <div>
-          <div className='flex flex-row-reverse font-bold text-orange-600'>
+          <div className='flex flex-row-reverse font-bold text-red-500'>
           {product.product_name.toUpperCase() === 'BREAD' && breadSavings
                 ? 'Discount ' + breadSavings
                 : product.product_name.toUpperCase() === 'BUTTER' &&

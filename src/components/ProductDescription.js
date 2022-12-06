@@ -57,7 +57,7 @@ function ProductDescription(){
 
     return(
     <div className="flex md:flex-col justify-between lg:flex-row">
-    <div className="flex flex-col container bg-red-300 rounded-md p-3 justify-items-start max-w-sm">
+    <div className="flex flex-col container bg-blue-200 rounded-md p-3 justify-items-start max-w-sm">
         <h1 className="font-bold mb-3 text-center">PRODUCTS AVAILABLE</h1>
         <hr className="border-1 w-full" />
         <div className="flex flex-row justify-items-start p-3">
@@ -70,7 +70,7 @@ function ProductDescription(){
             <div className="flex flex-row items-center justify-evenly p-3">
             <div className="font-bold w-20">{product.product_name}</div>
             <div className="font-bold w-20">£ {product.price}</div>
-            <button className="bg-gradient-to-r from-red-900 to-red-400 rounded-full py-2 px-2 my-2 text-sm text-white hover:bg-red-400 hover:from-red-500 hover:to-red-600 flex flex-row justify-center w-28 outline-none"
+            <button className="bg-gradient-to-r from-blue-600 to-blue-400 rounded-full py-2 px-2 my-2 text-sm text-white hover:bg-blue-400 hover:from-blue-500 hover:to-blue-600 flex flex-row justify-center w-28 outline-none"
             disabled={productMatching.find(
                 (matchProduct) => matchProduct.id === product.id
             )}
@@ -85,7 +85,7 @@ function ProductDescription(){
                 productMatching.find(
                   (matchProduct) => matchProduct.id === product.id
                 )
-                  ? {color: "#d9cbcb", background: "rgb(177 165 165)", cursor: "not-allowed" }
+                  ? {color: "gray", background: "rgb(173 212 231", cursor: "not-allowed" }
                   : {}
               }
             >ADD TO CART</button>
