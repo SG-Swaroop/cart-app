@@ -8,7 +8,6 @@ import{
 } from '../redux/action/productAction'
 
 
-
 function Cart() {
     const dispatch = useDispatch();
     const productDetails = useSelector((state) => state.selectedProduct)
@@ -194,7 +193,7 @@ function Cart() {
     (<Bill {...{subTotal, savings, totalAmount}}
     />
     ) : null}
-   </div>
+    </div>
   );
 }
 

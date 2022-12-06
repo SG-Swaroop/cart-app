@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Bill({subTotal, savings, totalAmount}) {
   return (
     <div className='flex flex-col'>
@@ -17,6 +18,7 @@ function Bill({subTotal, savings, totalAmount}) {
         <span>Total Amount</span>
         <span>£ {totalAmount.toFixed(2)}</span>
         </div>
+        
     </div>
   );
 }
