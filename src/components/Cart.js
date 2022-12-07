@@ -22,9 +22,6 @@ function Cart() {
     let freeCheeseCount = 0;
     let isCheeseFree = false;
     
-    
-  console.log(productDetails);
-
     const bread = productDetails.find(
         (product) => product.product_name.toUpperCase() === 'BREAD'
     );
@@ -44,10 +41,8 @@ function Cart() {
     const butter = productDetails.find(
         (product) => product.product_name.toUpperCase() === 'BUTTER'
     );
-
-    console.log('SOUP',soup ,'bread', bread);
-
-    if(soup?.product_count >= 1 && bread?.product_count >= 2){
+  
+  if(soup?.product_count >= 1 && bread?.product_count >= 2){
         breadSavings = (bread.price * bread?.product_count) / 2;
     savings += breadSavings;
     }

@@ -32,8 +32,7 @@ const productDescription=[
 ];
 
 function ProductDescription(){
-    
-    const dispatch = useDispatch();
+   const dispatch = useDispatch();
     const setProductToStore=(id, name, price)=>{
         alert('Product Added to Cart');
         let selectedProduct = {
@@ -60,8 +59,7 @@ function ProductDescription(){
     <div className="flex flex-col container bg-blue-200 rounded-md p-3 justify-items-start max-w-sm">
         <h1 className="font-bold mb-3 text-center">PRODUCTS AVAILABLE</h1>
         <hr className="border-1 w-full" />
-       <hr className="border-1 w-full" />
-        {productDescription.map((product)=>(
+       {productDescription.map((product)=>(
         <div key={product.id}>
             <div className="flex flex-row items-center justify-evenly p-3">
             <div className="font-bold w-20">{product.product_name}</div>
