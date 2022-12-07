@@ -94,7 +94,7 @@ function Cart() {
   };
     
   return (
-    <div className='flex flex-col container bg-blue-200 rounded-md p-3 ml-4 md:w-full'>
+    <div className='flex flex-col container bg-blue-200 rounded-md p-3 ml-4 mr-3 md:w-full'>
     <h1 className='font-bold text-center mb-3'>Your Cart</h1>
     <hr className='border-1 w-full'/>
     {productDetails.map((product)=>(
