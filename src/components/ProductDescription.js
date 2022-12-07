@@ -55,7 +55,7 @@ function ProductDescription(){
     });
 
     return(
-    <div className="flex md:flex-col justify-between lg:flex-row">
+    <div className="flex md:flex-col justify-between lg:flex-row pl-3 mt-2">
     <div className="flex flex-col container bg-blue-200 rounded-md p-3 justify-items-start max-w-sm">
         <h1 className="font-bold mb-3 text-center">PRODUCTS AVAILABLE</h1>
         <hr className="border-1 w-full" />
