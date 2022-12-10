@@ -43,7 +43,7 @@ function ProductDescription(){
         };
         dispatch(selectProduct(selectedProduct));
     };
-
+        console.log('git add')
     const productDetails = useSelector((state => state.selectedProduct));
     let productMatching = [];
     productDescription?.forEach((element)=>{
